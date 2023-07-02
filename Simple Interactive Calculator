@@ -1,0 +1,26 @@
+#include<stdio.h>
+int main()
+{
+    int n1,n2,op;
+    printf("This is a simple interactive calculator:\n");
+    printf("Enter numbers:\n");
+    scanf("%d%d", &n1,&n2);
+    printf("Enter: 1.Addition\n2.Subtraction\n3.Division\n4.Multiplication\n5.Remainder\n");
+    scanf("%d", &op);
+
+    switch(op)
+    {
+        case 1: printf("%d+%d = %d", n1,n2,n1+n2);
+        break;
+        case 2: printf("%d-%d = %d", n1,n2,n1-n2);
+        break;
+        case 3: printf("%d/%d = %d", n1,n2,n1/n2);
+        break;
+        case 4: printf("%dx%d = %d", n1,n2,n1*n2);
+        break;
+        case 5: printf("%dmod%d = %d", n1,n2,n1%n2);
+        break;
+        default:printf("Invalid Operator");
+    }
+    return 0;
+}
