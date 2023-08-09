@@ -2,9 +2,9 @@
 int main()
 {
 int a[20],i,n,even=0,odd=0;
-printf("enter: ");
+printf("enter number of elements: ");
 scanf("%d", &n);
-printf("enter: ");
+printf("enter values: ");
 for(i=0;i<=n-1;i++)
 {
 scanf("%d", &a[i]);
@@ -21,5 +21,5 @@ if(a[i]%2!=0)
 odd++;
 }
 }
-printf("%d %d", even ,odd);
+printf("even=%d odd=%d", even ,odd);
 }
