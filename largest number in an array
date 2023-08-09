@@ -1,16 +1,16 @@
 #include<stdio.h>
-int large(int a[], int n)
+int largest(int a[], int n)
 {
-int i,p;
-p=a[0];
+int i,large;
+large=a[0];
 for(i=1;i<=n-1;i++)
 {
-if(p<a[i])
+if(large<a[i])
 {
-p=a[i];
+large=a[i];
 }
 }
-printf("%d",p);
+printf("%d",large);
 }
 int main()
 {
@@ -22,5 +22,5 @@ for(i=0;i<=n-1;i++)
 {
 scanf("%d", &a[i]);
 }
-large(a,n);
+largest(a,n);
 }
